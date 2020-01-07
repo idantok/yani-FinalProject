@@ -166,22 +166,24 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="238" Margin="214,211,0,0" VerticalAlignment="Top" Width="522"/>
-        <Label x:Name="Log_In_Label" Content="Log In" HorizontalAlignment="Left" Margin="380,230,0,0" VerticalAlignment="Top" Height="73" Width="200" FontSize="64" FontFamily="Aharoni"/>
-        <TextBox x:Name="user_Textbox" HorizontalAlignment="Left" Height="32" Margin="295,322,0,0" TextWrapping="Wrap" Text="User" VerticalAlignment="Top" Width="151" Foreground="Gray"/>
-        <TextBox x:Name="password_Textbox" HorizontalAlignment="Left" Height="32" Margin="514,322,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="151" Foreground="Gray"/>
-        <Label x:Name="title__Label_" Content="Duty Manager" HorizontalAlignment="Left" Margin="241,45,0,0" VerticalAlignment="Top" Height="86" Width="495" FontSize="64" FontFamily="Aharoni"/>
-        <CheckBox HorizontalAlignment="Center" Style="{DynamicResource CheckBoxStyle2}" VerticalAlignment="Center" Content="Save Password" Margin="473,372,222.4,144.4" Padding="56,12,12,12" Width="195" Height="38" RenderTransformOrigin="0.5,0.5" FontSize="11" FontWeight="Bold">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="40" Margin="132,491,0,0" VerticalAlignment="Top" Width="647"/>
+        <Label x:Name="Log_In_Label" Content="Log In" HorizontalAlignment="Left" Margin="375,137,0,0" VerticalAlignment="Top" Height="73" Width="200" FontSize="64" FontFamily="Aharoni"/>
+        <TextBox x:Name="user_Textbox" HorizontalAlignment="Left" Height="34" Margin="272,243,0,0" TextWrapping="Wrap" Text="User" VerticalAlignment="Top" Width="173" Foreground="Gray" FontSize="15"/>
+        <TextBox x:Name="password_Textbox" HorizontalAlignment="Left" Height="34" Margin="490,243,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="173" Foreground="Gray" FontSize="15" RenderTransformOrigin="-0.151,-0.741"/>
+        <Label x:Name="title__Label_" Content="Duty Manager" HorizontalAlignment="Left" Margin="250,46,0,0" VerticalAlignment="Top" Height="86" Width="495" FontSize="64" FontFamily="Aharoni"/>
+        <CheckBox HorizontalAlignment="Center" Style="{DynamicResource CheckBoxStyle2}" VerticalAlignment="Center" Content="Save Password" Margin="436,368,162.4,128.4" Padding="56,12,12,12" Width="292" Height="58" RenderTransformOrigin="0.5,0.5" FontSize="11" FontWeight="Bold">
             <CheckBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
-                    <SkewTransform AngleY="-0.355"/>
+                    <SkewTransform AngleY="-0.358"/>
                     <RotateTransform/>
                     <TranslateTransform Y="0.394"/>
                 </TransformGroup>
             </CheckBox.RenderTransform>
         </CheckBox>
-        <Label x:Name="forgotPassword_label" Content="Forgot Passoword?" HorizontalAlignment="Left" Margin="317,379,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Height="23" Width="121" Foreground="#FF0728DD" ForceCursor="True" Cursor="Hand"/>
+        <Label x:Name="forgotPassword_label" Content="Forgot Passoword?" HorizontalAlignment="Left" Margin="293,389,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Height="34" Width="182" Foreground="#FF0728DD" ForceCursor="True" Cursor="Hand"/>
+        <Button x:Name="connect_button" Content="Connect" HorizontalAlignment="Left" Margin="385,313,0,0" VerticalAlignment="Top" Width="162" Height="43" BorderBrush="#FFF6F6F6" Background="#FFA1A6C0" Click="Connect_button_Click"/>
+
 
     </Grid>
 </Window>

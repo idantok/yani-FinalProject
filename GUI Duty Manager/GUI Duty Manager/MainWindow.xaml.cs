@@ -24,5 +24,10 @@ namespace GUI_Duty_Manager
         {
             InitializeComponent();
         }
+
+        private void Connect_button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

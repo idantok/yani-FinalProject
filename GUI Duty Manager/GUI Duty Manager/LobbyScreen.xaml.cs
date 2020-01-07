@@ -10,26 +10,32 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace GUI_Duty_Manager
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LobbyScreen.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LobbyScreen : Window
     {
-        public MainWindow()
+        public LobbyScreen()
         {
             InitializeComponent();
         }
-        
-        private void Connect_button_Click(object sender, RoutedEventArgs e)
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            LobbyScreen ls = new LobbyScreen();
-            ls.Show();
+            MainWindow mw = new MainWindow();
+            mw.Show();
             this.Close();
+        }
+
+
+        private void Setting_Button_Click(object sender, RoutedEventArgs e)
+        {
+            SettingsScreen ss = new SettingsScreen();
+            ss.Show();
         }
     }
 }

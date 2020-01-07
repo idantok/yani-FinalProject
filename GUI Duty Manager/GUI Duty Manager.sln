@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI Duty Manager", "GUI Duty Manager\GUI Duty Manager.csproj", "{C61E73C4-153C-45A5-B8A7-0CF1155FE4E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C61E73C4-153C-45A5-B8A7-0CF1155FE4E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61E73C4-153C-45A5-B8A7-0CF1155FE4E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61E73C4-153C-45A5-B8A7-0CF1155FE4E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61E73C4-153C-45A5-B8A7-0CF1155FE4E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E57C91C-8B01-4ED6-BB13-07C4F3D886F6}
+	EndGlobalSection
+EndGlobal

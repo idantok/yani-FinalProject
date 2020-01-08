@@ -44,5 +44,11 @@ namespace GUI_Duty_Manager
             fs.Show();
             this.Close();
         }
+
+        private void Bt_main_reports_Click(object sender, RoutedEventArgs e)
+        {
+            ReportScreen rs = new ReportScreen();
+                rs.Show();
+        }
     }
 }

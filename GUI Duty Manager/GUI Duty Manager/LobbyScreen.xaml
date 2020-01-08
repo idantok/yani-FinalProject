@@ -20,7 +20,7 @@
         <Button x:Name="back_button_Copy" Content="התנתק" HorizontalAlignment="Left" Margin="156.8,10,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" Height="39" FontSize="30" FontFamily="Aharoni" Grid.ColumnSpan="2" Grid.Column="2"/>
         <Label x:Name="network_label" Content=":מצב תקשורת" HorizontalAlignment="Left" Margin="106,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.236,0.406"/>
         <Label x:Name="network_label_Copy" Content="מחובר" HorizontalAlignment="Left" Margin="69,10,0,0" VerticalAlignment="Top" Foreground="#FF64AD6A" FontStretch="ExtraCondensed" FontWeight="ExtraBold"/>
-        <Button HorizontalAlignment="Left" Margin="345,143,0,0" VerticalAlignment="Top" Width="199" Height="77" Content="&#xD;&#xA;דוחות&#xA;&#xA;&#xA;&#xD;&#xA;" FontWeight="Bold"/>
+        <Button x:Name="bt_main_reports" HorizontalAlignment="Left" Margin="345,143,0,0" VerticalAlignment="Top" Width="199" Height="77" Content="&#xD;&#xA;דוחות&#xA;&#xA;&#xA;&#xD;&#xA;" FontWeight="Bold" Click="Bt_main_reports_Click"/>
         <Button HorizontalAlignment="Left" Margin="169,261,0,0" VerticalAlignment="Top" Width="223" Height="77" Content="&#xD;&#xA;שיבוץ תורנויות&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" Background="#FF9DBCEA" FontWeight="Bold">
             <Button.BorderBrush>
                 <ImageBrush TileMode="FlipY"/>

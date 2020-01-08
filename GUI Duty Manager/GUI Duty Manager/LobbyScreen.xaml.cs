@@ -37,5 +37,12 @@ namespace GUI_Duty_Manager
             SettingsScreen ss = new SettingsScreen();
             ss.Show();
         }
+
+        private void Bt_main_reports_Click(object sender, RoutedEventArgs e)
+        {
+            ReportScreen rs = new ReportScreen();
+            rs.Show();
+            
+        }
     }
 }

@@ -170,7 +170,7 @@
             <ColumnDefinition Width="773*"/>
             <ColumnDefinition Width="117*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="Log_In_Label" Content="Log In" HorizontalAlignment="Left" Margin="375,137,0,0" VerticalAlignment="Top" Height="73" Width="200" FontSize="64" FontFamily="Aharoni"/>
+        <Label x:Name="Log_In_Label" Content="Log In" HorizontalAlignment="Left" Margin="365,149,0,0" VerticalAlignment="Top" Height="73" Width="200" FontSize="64" FontFamily="Aharoni"/>
         <TextBox x:Name="user_Textbox" HorizontalAlignment="Left" Height="34" Margin="272,243,0,0" TextWrapping="Wrap" Text="User" VerticalAlignment="Top" Width="173" Foreground="Gray" FontSize="15"/>
         <TextBox x:Name="password_Textbox" HorizontalAlignment="Left" Height="34" Margin="490,243,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="173" Foreground="Gray" FontSize="15" RenderTransformOrigin="-0.151,-0.741"/>
         <Label x:Name="title__Label_" Content="Duty Manager" HorizontalAlignment="Left" Margin="250,46,0,0" VerticalAlignment="Top" Height="86" Width="495" FontSize="64" FontFamily="Aharoni"/>
@@ -188,6 +188,7 @@
         <Button x:Name="connect_button" Content="Connect" HorizontalAlignment="Left" Margin="375,314,0,0" VerticalAlignment="Top" Width="162" Height="43" BorderBrush="#FFF6F6F6" Background="#FFA1A6C0" Click="Connect_button_Click"/>
         <Label x:Name="Savepassword_label_" Content="Save Password" HorizontalAlignment="Left" Margin="457,389,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Height="24" Width="118" Foreground="#FF030303" ForceCursor="True" Cursor="Hand"/>
         <Label Content=" Ⓒ Yani-Team GUI Project" HorizontalAlignment="Left" Margin="731,519,0,0" VerticalAlignment="Top" Width="149" Grid.ColumnSpan="2"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="312" Margin="203,149,0,0" VerticalAlignment="Top" Width="533"/>
 
 
     </Grid>

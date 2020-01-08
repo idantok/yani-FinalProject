@@ -13,9 +13,9 @@
             <ColumnDefinition Width="18*"/>
             <ColumnDefinition Width="165*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="newUser_Button" Content="&#xD;&#xA;יצירת משתמש חדש" Grid.Column="1" HorizontalAlignment="Left" Margin="279.6,66,-0.2,0" VerticalAlignment="Top" Width="235" Height="38" Click="NewUser_Button_Click_1" Grid.ColumnSpan="3" FontFamily="Aharoni" FontSize="16"/>
-        <Button x:Name="generalSetting_Button" Content="הגדרות כלליות" Grid.Column="1" HorizontalAlignment="Left" Margin="279.6,109,-0.2,0" VerticalAlignment="Top" Width="235" Height="38" Click="GeneralSetting_Button_Click" Grid.ColumnSpan="3" FontFamily="Aharoni" FontSize="16"/>
-        <Button x:Name="DataBaseSetting_Button_Copy" Content=" SQL הגדרות שרת  " Grid.Column="1" HorizontalAlignment="Left" Margin="279.6,152,-0.2,0" VerticalAlignment="Top" Width="235" Height="38" Grid.ColumnSpan="3" FontFamily="Aharoni" FontSize="15"/>
+        <Button x:Name="newUser_Button" Content="יצירת משתמש חדש" Grid.Column="1" HorizontalAlignment="Left" Margin="272.6,65,0,0" VerticalAlignment="Top" Width="235" Height="38" Click="NewUser_Button_Click_1" Grid.ColumnSpan="3" FontFamily="Aharoni" FontSize="16"/>
+        <Button x:Name="generalSetting_Button" Content="הגדרות כלליות" Grid.Column="1" HorizontalAlignment="Left" Margin="272.6,104,0,0" VerticalAlignment="Top" Width="235" Height="38" Click="GeneralSetting_Button_Click" Grid.ColumnSpan="3" FontFamily="Aharoni" FontSize="16"/>
+        <Button x:Name="DataBaseSetting_Button_Copy" Content=" SQL הגדרות שרת  " Grid.Column="1" HorizontalAlignment="Left" Margin="272.6,143,0,0" VerticalAlignment="Top" Width="235" Height="38" Grid.ColumnSpan="3" FontFamily="Aharoni" FontSize="15"/>
         <Button x:Name="backSS_Button" Content="חזרה לתפריט" Grid.Column="3" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" Width="121" Height="28" Click="BackSS_Button_Click" FontFamily="Aharoni"/>
         <Canvas x:Name="new_user_canvas" HorizontalAlignment="Left" Height="374" Margin="0,26,0,0" VerticalAlignment="Top" Width="622" Grid.ColumnSpan="2">
             <TextBox Height="26" Canvas.Left="267" TextWrapping="Wrap" Text="ישראלי" Canvas.Top="156" Width="220" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16"/>
@@ -29,11 +29,11 @@
             <Image Height="100" Canvas.Left="66" Canvas.Top="72" Width="100"/>
             <Image Height="162" Source="Image3.png" Stretch="Fill" Width="162" Canvas.Left="49" Canvas.Top="98"/>
             <Label x:Name="forgotPassword_label" Content="בחר תמונה" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Aharoni" Height="24" Width="61" Foreground="#FF0728DD" ForceCursor="True" Cursor="Hand" Canvas.Left="94" Canvas.Top="265" FontSize="14"/>
-            <Button Content="צור" Canvas.Left="249" Canvas.Top="319" Width="128" Height="45" FontSize="16" FontFamily="Aharoni" RenderTransformOrigin="0.514,0.724"/>
+            <Button Content="צור" Canvas.Left="335" Canvas.Top="313" Width="128" Height="45" FontSize="16" FontFamily="Aharoni" RenderTransformOrigin="0.514,0.724"/>
             <Label Content="יצירת משתמש חדש" Canvas.Left="226" Canvas.Top="10" Width="186" FontSize="25" FontFamily="Aharoni"/>
             <GroupBox Header="פרטים אישיים" Height="217" Canvas.Left="249" Canvas.Top="72" Width="354" FontFamily="Aharoni"/>
             <GroupBox Header="תמונה" HorizontalAlignment="Left" Height="218" VerticalAlignment="Top" Width="204" FontFamily="Aharoni" Canvas.Left="24" Canvas.Top="71"/>
-            <Image Source="icons8-checkmark-48.png" Stretch="Fill" Height="32" Canvas.Left="260" Canvas.Top="326" Width="41"/>
+            <Image Source="icons8-checkmark-48.png" Stretch="Fill" Height="32" Canvas.Left="413" Canvas.Top="318" Width="41"/>
         </Canvas>
         <Canvas x:Name="newuser_canvas" HorizontalAlignment="Left" Height="374" Margin="5,26,0,0" VerticalAlignment="Top" Width="622" Grid.ColumnSpan="2" Visibility="Hidden">
             <TextBox Height="26" Canvas.Left="267" TextWrapping="Wrap" Text="ישראלי" Canvas.Top="156" Width="220" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16"/>
@@ -53,19 +53,19 @@
         </Canvas>
         <Canvas x:Name="general_setting_canvas" HorizontalAlignment="Left" Height="374" Margin="5,26,0,0" VerticalAlignment="Top" Width="622" Grid.ColumnSpan="2" Visibility="Hidden">
             <Button Content="עדכון מידע משתמש" Canvas.Left="182" Canvas.Top="106" Width="245" Height="57" FontFamily="Aharoni" FontSize="26"/>
-            <Button Content="עדכון מידע משתמש" Canvas.Left="182" Canvas.Top="190" Width="245" Height="57" FontFamily="Aharoni" FontSize="26"/>
-            <Button Content="עדכון מידע משתמש" Canvas.Left="182" Canvas.Top="274" Width="245" Height="57" FontFamily="Aharoni" FontSize="26"/>
+            <Button Content="עדכון סיסמה" Canvas.Left="182" Canvas.Top="190" Width="245" Height="57" FontFamily="Aharoni" FontSize="26"/>
+            <Button Content="עדכון שפה ותצוגת תוכנה" Canvas.Left="182" Canvas.Top="274" Width="245" Height="57" FontFamily="Aharoni" FontSize="26"/>
             <Label Content="הגדרות כלליות" Canvas.Left="242" Canvas.Top="10" Height="38" Width="204" FontFamily="Aharoni" FontSize="25"/>
         </Canvas>
         <Image Margin="119,72,12.8,349" Source="plus.png" Stretch="Fill" Grid.Column="3"/>
         <Image Margin="115,11,23.8,414" Source="exit (3).png" Stretch="Fill" Grid.Column="3"/>
-        <Image Grid.ColumnSpan="2" Margin="5,0,196.6,-62" Source="Image5.png" Stretch="Fill">
+        <Image Margin="-235,-80,105.4,18" Source="Image5.png" Stretch="Fill">
             <Image.OpacityMask>
                 <ImageBrush/>
             </Image.OpacityMask>
         </Image>
-        <Image Source="help.png" Stretch="Fill" Margin="118,113,11.8,306" Grid.Column="3"/>
-        <Image Margin="115,149,9.8,256" Source="icons8-lock-database-50.png" Stretch="Fill" Grid.Column="3"/>
+        <Image Source="help.png" Stretch="Fill" Margin="118,108,11.8,311" Grid.Column="3"/>
+        <Image Margin="115,139,9.8,266" Source="icons8-lock-database-50.png" Stretch="Fill" Grid.Column="3"/>
 
     </Grid>
 </Window>

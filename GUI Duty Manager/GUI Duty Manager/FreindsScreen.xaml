@@ -13,8 +13,8 @@
             <ColumnDefinition Width="39*"/>
             <ColumnDefinition Width="152*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="newUser_Button" Content="הוספת חבר חדש" HorizontalAlignment="Left" Margin="524,66,0,0" VerticalAlignment="Top" Width="235" Height="38" Click="NewUser_Button_Click_1" Grid.ColumnSpan="3" Grid.Column="1" FontFamily="Aharoni" FontSize="16"/>
-        <Button x:Name="generalSetting_Button" Content="מחיקת חבר/ עידכון" HorizontalAlignment="Left" Margin="524,109,0,0" VerticalAlignment="Top" Width="235" Height="38" Click="GeneralSetting_Button_Click" Grid.ColumnSpan="3" Grid.Column="1" FontSize="16" FontFamily="Aharoni"/>
+        <Button x:Name="newUser_Button" Content="הוספת חבר חדש" HorizontalAlignment="Left" Margin="519.4,70,0,0" VerticalAlignment="Top" Width="235" Height="38" Click="NewUser_Button_Click_1" Grid.ColumnSpan="3" Grid.Column="1" FontFamily="Aharoni" FontSize="16"/>
+        <Button x:Name="generalSetting_Button" Content="מחיקת חבר/ עידכון" HorizontalAlignment="Left" Margin="519.4,109,0,0" VerticalAlignment="Top" Width="235" Height="38" Click="GeneralSetting_Button_Click" Grid.ColumnSpan="3" Grid.Column="1" FontSize="16" FontFamily="Aharoni"/>
         <Canvas x:Name="new_superuser_canvas" HorizontalAlignment="Left" Height="397" Margin="10,5,0,0" VerticalAlignment="Top" Width="622" Grid.ColumnSpan="2">
             <Label Content="שם משפחה" Canvas.Left="487" Canvas.Top="123" Width="104" FontFamily="Aharoni" Height="43" FontSize="16"/>
             <Label Content="אימייל" Canvas.Left="488" Canvas.Top="269" Width="104" FontFamily="Aharoni" Height="29" FontSize="16"/>
@@ -38,11 +38,12 @@
             <TextBox TextWrapping="Wrap" Text="nnnnnnnnnn" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Height="24" Canvas.Left="262" Canvas.Top="159" Width="220"/>
             <TextBox TextWrapping="Wrap" Text="email@email" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Height="24" Canvas.Left="263" Canvas.Top="269" Width="220"/>
             <TextBox TextWrapping="Wrap" Text="nnnnnnnnnn" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Height="24" Canvas.Left="262" Canvas.Top="298" Width="220"/>
-            <TextBox TextWrapping="Wrap" Text="nnnnnnnnnn" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Height="24" Canvas.Left="263" Canvas.Top="92" Width="220"/>
+            <TextBox TextWrapping="Wrap" Text="ישראל" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Height="24" Canvas.Left="263" Canvas.Top="92" Width="220"/>
             <Label Content="שם פרטי" Canvas.Left="488" Canvas.Top="92" Width="104" FontFamily="Aharoni" Height="43" FontSize="16"/>
             <Image Source="icons8-checkmark-48.png" Stretch="Fill" Height="36" Canvas.Left="135" Canvas.Top="326" Width="41"/>
+            <TextBox TextWrapping="Wrap" Text="ישראלי" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Height="24" Canvas.Left="263" Canvas.Top="121" Width="220"/>
         </Canvas>
-        <Canvas x:Name="update_user_canvas" HorizontalAlignment="Left" Height="397" Margin="10,23,0,0" VerticalAlignment="Top" Width="627" Grid.ColumnSpan="2">
+        <Canvas x:Name="update_user_canvas" HorizontalAlignment="Left" Height="397" Margin="10,23,0,0" VerticalAlignment="Top" Width="627" Grid.ColumnSpan="2" Visibility="Hidden">
             <Image Height="100" Canvas.Left="66" Canvas.Top="72" Width="100"/>
             <Image Height="162" Source="Image3.png" Stretch="Fill" Width="162" Canvas.Left="49" Canvas.Top="98"/>
             <Label x:Name="forgotPassword_label1" Content="בחר תמונה" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Aharoni" Height="24" Width="61" Foreground="#FF0728DD" ForceCursor="True" Cursor="Hand" Canvas.Left="94" Canvas.Top="265" FontSize="14"/>
@@ -78,7 +79,6 @@
             <Image Height="30" Source="icons8-delete-100.png" Stretch="Fill" Width="37" Canvas.Left="141" Canvas.Top="304"/>
             <Image Source="icons8-update-48.png" Stretch="Fill" Height="29" Canvas.Left="140" Canvas.Top="346" Width="37"/>
         </Canvas>
-        <TextBox TextWrapping="Wrap" Text="ישראל" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Margin="217,134,215,290" Grid.Column="1"/>
         <Button x:Name="backSS_Buttone" Content="חזרה לתפריט" Grid.Column="3" HorizontalAlignment="Left" Margin="8.2,10,0,0" VerticalAlignment="Top" Width="121" Height="28" Click="BackSS_Buttone_Click" FontFamily="Aharoni"/>
         <Image Margin="102.2,11,23.8,414.4" Source="exit (3).png" Stretch="Fill" Grid.Column="3"/>
         <Image Margin="106.2,72,12.8,349.4" Source="plus.png" Stretch="Fill" Grid.Column="3"/>

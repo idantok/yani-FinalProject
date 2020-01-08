@@ -44,7 +44,7 @@
         <Button Content="" HorizontalAlignment="Left" Margin="0,230,0,0" VerticalAlignment="Top" Width="654" Background="#FFE7E7E7"/>
         <Button Content="" HorizontalAlignment="Left" Margin="0,268,0,0" VerticalAlignment="Top" Width="654" Background="#FFDCC2C2"/>
         <Button Content="" HorizontalAlignment="Left" Margin="0,268,0,0" VerticalAlignment="Top" Width="654" Background="#FFE7E7E7"/>
-        <Image Margin="71.4,479,64.4,47.4" Source="professions-and-jobs.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Margin="63.8,484,70.4,48.4" Source="professions-and-jobs.png" Stretch="Fill" Grid.Column="1"/>
 
     </Grid>
 </Window>

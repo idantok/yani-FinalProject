@@ -40,14 +40,16 @@ namespace GUI_Duty_Manager
 
         private void GeneralSetting_Button_Click(object sender, RoutedEventArgs e)
         {
-            update_user_canvas.Visibility = Visibility.Hidden;
-            new_superuser_canvas.Visibility = Visibility.Visible;
+
+            update_user_canvas.Visibility = Visibility.Visible;
+            new_superuser_canvas.Visibility = Visibility.Hidden;
         }
 
         private void NewUser_Button_Click_1(object sender, RoutedEventArgs e)
         {
-            update_user_canvas.Visibility = Visibility.Visible;
-            new_superuser_canvas.Visibility = Visibility.Hidden;
+            update_user_canvas.Visibility = Visibility.Hidden;
+            new_superuser_canvas.Visibility = Visibility.Visible;
+
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

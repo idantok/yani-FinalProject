@@ -56,7 +56,7 @@ namespace GUI_Duty_Manager
 
         private void Btn_tor_lachaver_Click(object sender, RoutedEventArgs e)
         {
-            check_box_chaverim.IsEnabled = true;
+            //check_box_chaverim.IsEnabled = true;
             check_box_report_shibutzim.IsEnabled = true;
             calendar_date_ini.IsEnabled = true;
             calendar_date_end.IsEnabled = true;
@@ -64,7 +64,7 @@ namespace GUI_Duty_Manager
 
         private void Btn_miss_Click(object sender, RoutedEventArgs e)
         {
-            check_box_chaverim.IsEnabled = false;
+            //check_box_chaverim.IsEnabled = false;
             check_box_toranuito.IsEnabled = false;
             check_box_report_shibutzim.IsEnabled = false;
             calendar_date_ini.IsEnabled = true;
@@ -80,11 +80,20 @@ namespace GUI_Duty_Manager
 
         private void Btn_tor_clali_Click(object sender, RoutedEventArgs e)
         {
-            check_box_chaverim.IsEnabled = false;
+            //check_box_chaverim.IsEnabled = false;
             check_box_toranuito.IsEnabled = false;
             check_box_report_shibutzim.IsEnabled = false;
             calendar_date_ini.IsEnabled = false;
             calendar_date_end.IsEnabled = false;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

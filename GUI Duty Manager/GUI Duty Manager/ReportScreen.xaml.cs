@@ -23,5 +23,25 @@ namespace GUI_Duty_Manager
         {
             InitializeComponent();
         }
+
+        private void Btn_back_to_main_Click(object sender, RoutedEventArgs e)
+        {
+            LobbyScreen lb = new LobbyScreen();
+            lb.Show();
+            this.Close();
+        }
+
+        private void Check_box_report_shibutzim_Checked(object sender, RoutedEventArgs e)
+        {
+            check_box_chaverim.IsEnabled = true;
+            check_box_toranuito.IsEnabled = true;
+
+        }
+
+        private void Check_box_report_shibutzim_Unchecked(object sender, RoutedEventArgs e)
+        {
+            check_box_chaverim.IsEnabled = false;
+            check_box_toranuito.IsEnabled = false;
+        }
     }
 }

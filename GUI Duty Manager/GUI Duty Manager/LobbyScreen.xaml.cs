@@ -49,6 +49,7 @@ namespace GUI_Duty_Manager
         {
             ReportScreen rs = new ReportScreen();
                 rs.Show();
+            this.Close();
         }
     }
 }

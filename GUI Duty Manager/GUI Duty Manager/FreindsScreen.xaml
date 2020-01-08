@@ -8,14 +8,15 @@
         Title="FreindsScreen" Height="450" Width="896.8">
     <Grid Width="896.8" Height="450" Margin="0,0,-6.6,-30" Visibility="Visible">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="706*"/>
+            <ColumnDefinition Width="138*"/>
+            <ColumnDefinition Width="568*"/>
             <ColumnDefinition Width="39*"/>
             <ColumnDefinition Width="152*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="newUser_Button" Content="הוספת חבר חדש" HorizontalAlignment="Left" Margin="662,66,-0.2,0" VerticalAlignment="Top" Width="235" Height="38" Click="NewUser_Button_Click_1" Grid.ColumnSpan="3"/>
-        <Button x:Name="generalSetting_Button" Content="מחיקת חבר/ עידכון" HorizontalAlignment="Left" Margin="662,109,-0.2,0" VerticalAlignment="Top" Width="235" Height="38" Click="GeneralSetting_Button_Click" Grid.ColumnSpan="3"/>
-        <Button x:Name="backSS_Button" Content="יציאה" HorizontalAlignment="Left" Margin="38.2,10,0,0" VerticalAlignment="Top" Width="91" Height="28" Click="BackSS_Button_Click" Grid.Column="2"/>
-        <Canvas x:Name="new_superuser_canvas" HorizontalAlignment="Left" Height="397" Margin="10,10,0,0" VerticalAlignment="Top" Width="622">
+        <Button x:Name="newUser_Button" Content="הוספת חבר חדש" HorizontalAlignment="Left" Margin="524,66,0,0" VerticalAlignment="Top" Width="235" Height="38" Click="NewUser_Button_Click_1" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <Button x:Name="generalSetting_Button" Content="מחיקת חבר/ עידכון" HorizontalAlignment="Left" Margin="524,109,0,0" VerticalAlignment="Top" Width="235" Height="38" Click="GeneralSetting_Button_Click" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <Button x:Name="backSS_Button" Content="חזרה" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" Width="91" Height="28" Click="BackSS_Button_Click" Grid.Column="3"/>
+        <Canvas x:Name="new_superuser_canvas" HorizontalAlignment="Left" Height="397" Margin="10,10,0,0" VerticalAlignment="Top" Width="622" Grid.ColumnSpan="2">
             <Label Content="שם משפחה" Canvas.Left="487" Canvas.Top="123" Width="104" FontFamily="Aharoni" Height="43" FontSize="16"/>
             <Label Content="אימייל" Canvas.Left="488" Canvas.Top="269" Width="104" FontFamily="Aharoni" Height="29" FontSize="16"/>
             <Label Content="מספר פלאפון" Canvas.Left="488" Canvas.Top="159" Width="104" FontFamily="Aharoni" Height="29" FontSize="16"/>
@@ -41,7 +42,7 @@
             <TextBox TextWrapping="Wrap" Text="nnnnnnnnnn" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Height="24" Canvas.Left="263" Canvas.Top="92" Width="220"/>
             <Label Content="שם פרטי" Canvas.Left="488" Canvas.Top="92" Width="104" FontFamily="Aharoni" Height="43" FontSize="16"/>
         </Canvas>
-        <Canvas x:Name="update_user_canvas" HorizontalAlignment="Left" Height="397" Margin="10,23,0,0" VerticalAlignment="Top" Width="622" Visibility="Visible">
+        <Canvas x:Name="update_user_canvas" HorizontalAlignment="Left" Height="397" Margin="10,23,0,0" VerticalAlignment="Top" Width="622" Visibility="Visible" Grid.ColumnSpan="2">
             <Image Height="100" Canvas.Left="66" Canvas.Top="72" Width="100"/>
             <Image Height="162" Source="Image3.png" Stretch="Fill" Width="162" Canvas.Left="49" Canvas.Top="98"/>
             <Label x:Name="forgotPassword_label1" Content="בחר תמונה" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Aharoni" Height="24" Width="61" Foreground="#FF0728DD" ForceCursor="True" Cursor="Hand" Canvas.Left="94" Canvas.Top="265" FontSize="14"/>
@@ -74,6 +75,6 @@
             <TextBox Height="19" Canvas.Left="378" TextWrapping="Wrap" Text="nnnnnnnnnn" Canvas.Top="327" Width="132" TextChanged="TextBox_TextChanged_1" TextAlignment="Right" Foreground="Gray" FontFamily="Aharoni"/>
             <TextBox Height="19" Canvas.Left="378" TextWrapping="Wrap" Text="nnnnnnnnnn" Canvas.Top="153" Width="132" TextChanged="TextBox_TextChanged_1" TextAlignment="Right" Foreground="Gray" FontFamily="Aharoni"/>
         </Canvas>
-        <TextBox TextWrapping="Wrap" Text="ישראל" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Margin="355,134,215.6,290"/>
+        <TextBox TextWrapping="Wrap" Text="ישראל" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Margin="217,134,215,290" Grid.Column="1"/>
     </Grid>
 </Window>

@@ -5,24 +5,84 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_Duty_Manager"
         mc:Ignorable="d"
-        Title="Duty Mangaer - מסך דוחות" Height="552.67" Width="896.8">
+        Title="Duty Mangaer - מסך דוחות" Height="552.67" Width="896.8" FontFamily="Aharoni">
     <Grid Background="#FF8D8D8D" OpacityMask="#FF4B3333">
-        <Button x:Name="btn_tor_clali" Content=" דוח תורנויות כללי" HorizontalAlignment="Left" Margin="654,63,0,0" VerticalAlignment="Top" Width="235" Height="38"/>
-        <Button x:Name="btn_tor_lachaver" Content="דוח תורנויות לחבר" HorizontalAlignment="Left" Margin="654,101,0,0" VerticalAlignment="Top" Width="235" Height="38"/>
-        <Button x:Name="btn_miss" Content="דוח היעדרויות" HorizontalAlignment="Left" Margin="654,139,0,0" VerticalAlignment="Top" Width="235" Height="38"/>
-        <Button x:Name="btn_shibutzim" Content="דוח שיבוצים" HorizontalAlignment="Left" Margin="654,177,0,0" VerticalAlignment="Top" Width="235" Height="38"/>
-        <CheckBox x:Name="check_box_report_shibutzim" Content="דוח שיבוצים לפי תורנויות" HorizontalAlignment="Left" Margin="701,239,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_tor_clali" Content=" דוח תורנויות כללי" HorizontalAlignment="Left" Margin="654,63,0,0" VerticalAlignment="Top" Width="235" Height="38" FontFamily="Aharoni" FontSize="16"/>
+        <Button x:Name="btn_tor_lachaver" Content="דוח תורנויות לחבר" HorizontalAlignment="Left" Margin="654,100,0,0" VerticalAlignment="Top" Width="235" Height="38" FontFamily="Aharoni" FontSize="16"/>
+        <Button x:Name="btn_miss" Content="דוח היעדרויות" HorizontalAlignment="Left" Margin="654,137,0,0" VerticalAlignment="Top" Width="235" Height="38" FontFamily="Aharoni" FontSize="16"/>
+        <Button x:Name="btn_shibutzim" Content="דוח שיבוצים" HorizontalAlignment="Left" Margin="654,174,0,0" VerticalAlignment="Top" Width="235" Height="38" FontFamily="Aharoni" FontSize="16"/>
+        <CheckBox x:Name="check_box_report_shibutzim" Content="דוח שיבוצים לפי תורנויות" HorizontalAlignment="Left" Margin="701,239,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Checked="Check_box_report_shibutzim_Checked" Unchecked="Check_box_report_shibutzim_Unchecked"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="889">
-            <Button x:Name="btn_back_to_main" Content="חזרה" Margin="763,9,9,18"/>
+            <Button x:Name="btn_back_to_main" Content="חזרה" Margin="763,9,9,18" Click="Btn_back_to_main_Click" FontFamily="Aharoni" FontSize="16"/>
         </Border>
-        <ComboBox HorizontalAlignment="Left" Margin="701,268,0,0" VerticalAlignment="Top" Width="154" Height="23"/>
-        <ComboBox HorizontalAlignment="Left" Margin="701,306,0,0" VerticalAlignment="Top" Width="154" Height="23"/>
-        <DatePicker HorizontalAlignment="Left" Margin="701,366,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.559,1.092"/>
-        <DatePicker HorizontalAlignment="Left" Margin="701,424,0,0" VerticalAlignment="Top"/>
-        <Label Content=":תאריך התחלה" HorizontalAlignment="Left" Margin="801,339,0,0" VerticalAlignment="Top"/>
-        <Label Content=":תאריך סיום" HorizontalAlignment="Left" Margin="812,397,0,0" VerticalAlignment="Top"/>
-        <Button Content="הצג דוח" HorizontalAlignment="Left" Margin="738,479,0,0" VerticalAlignment="Top" Width="94" Height="33"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="459" Margin="0,63,0,0" VerticalAlignment="Top" Width="654" Background="White"/>
+        <ComboBox x:Name="check_box_toranuito" HorizontalAlignment="Left" Margin="701,268,0,0" VerticalAlignment="Top" Width="154" Height="23"/>
+        <ComboBox x:Name="check_box_chaverim" HorizontalAlignment="Left" Margin="701,306,0,0" VerticalAlignment="Top" Width="154" Height="23"/>
+        <DatePicker x:Name="calendar_date_ini" HorizontalAlignment="Left" Margin="701,366,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.559,1.092"/>
+        <DatePicker x:Name="calendar_date_end" HorizontalAlignment="Left" Margin="701,424,0,0" VerticalAlignment="Top"/>
+        <Label Content=":תאריך התחלה" HorizontalAlignment="Left" Margin="808,368,0,0" VerticalAlignment="Top" FontFamily="Aharoni" FontSize="14"/>
+        <Label Content=":תאריך סיום" HorizontalAlignment="Left" Margin="820,424,0,0" VerticalAlignment="Top" FontFamily="Aharoni" FontSize="14"/>
+        <Button x:Name="btn_show_report" Content="הצג דוח" HorizontalAlignment="Left" Margin="738,479,0,0" VerticalAlignment="Top" Width="94" Height="33" FontFamily="Aharoni" FontSize="14"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="459" Margin="0,63,0,0" VerticalAlignment="Top" Width="654" Background="White">
+            <DataGrid>
+                <TabItem/>
+                <TabItem Background="#FFACA7A7"/>
+                <TabItem/>
+                <TabItem>
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFACA7A7" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                </TabItem>
+                <TabItem/>
+                <TabItem>
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFACA7A7" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                </TabItem>
+                <TabItem/>
+                <TabItem>
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFACA7A7" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                </TabItem>
+                <TabItem/>
+                <TabItem>
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFACA7A7" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                </TabItem>
+                <TabItem/>
+                <TabItem>
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFACA7A7" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                </TabItem>
+                <TabItem/>
+                <TabItem>
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFACA7A7" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                </TabItem>
+                <TabItem/>
+            </DataGrid>
+        </Border>
 
     </Grid>
 </Window>

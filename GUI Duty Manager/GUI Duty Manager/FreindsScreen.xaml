@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:GUI_Duty_Manager"
         mc:Ignorable="d"
         Title="FreindsScreen" Height="450" Width="896.8">
-    <Grid Width="896.8" Height="450">
+    <Grid Width="896.8" Height="450" Margin="0,0,-6.6,-30" Visibility="Visible">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="706*"/>
             <ColumnDefinition Width="39*"/>
@@ -16,34 +16,38 @@
         <Button x:Name="generalSetting_Button" Content="מחיקת חבר/ עידכון" HorizontalAlignment="Left" Margin="662,109,-0.2,0" VerticalAlignment="Top" Width="235" Height="38" Click="GeneralSetting_Button_Click" Grid.ColumnSpan="3"/>
         <Button x:Name="backSS_Button" Content="יציאה" HorizontalAlignment="Left" Margin="38.2,10,0,0" VerticalAlignment="Top" Width="91" Height="28" Click="BackSS_Button_Click" Grid.Column="2"/>
         <Canvas x:Name="new_superuser_canvas" HorizontalAlignment="Left" Height="397" Margin="10,10,0,0" VerticalAlignment="Top" Width="622">
-            <Label Content="&#xA;שם פרטי" Canvas.Left="487" Canvas.Top="83" Width="104" FontFamily="Aharoni" Height="43" FontSize="16"/>
-            <Label Content="אימייל" Canvas.Left="500" Canvas.Top="130" Width="104" FontFamily="Aharoni" Height="29" FontSize="16"/>
-            <Label Content="מספר פלאפון" Canvas.Left="487" Canvas.Top="181" Width="104" FontFamily="Aharoni" Height="29" FontSize="16"/>
+            <Label Content="שם משפחה" Canvas.Left="487" Canvas.Top="123" Width="104" FontFamily="Aharoni" Height="43" FontSize="16"/>
+            <Label Content="אימייל" Canvas.Left="488" Canvas.Top="269" Width="104" FontFamily="Aharoni" Height="29" FontSize="16"/>
+            <Label Content="מספר פלאפון" Canvas.Left="488" Canvas.Top="159" Width="104" FontFamily="Aharoni" Height="29" FontSize="16"/>
             <Image Height="100" Canvas.Left="66" Canvas.Top="72" Width="100"/>
             <Image Height="162" Source="Image3.png" Stretch="Fill" Width="162" Canvas.Left="49" Canvas.Top="98"/>
             <Label x:Name="forgotPassword_label" Content="בחר תמונה" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Aharoni" Height="24" Width="61" Foreground="#FF0728DD" ForceCursor="True" Cursor="Hand" Canvas.Left="94" Canvas.Top="265" FontSize="14"/>
-            <Button Content="צור" Canvas.Left="226" Canvas.Top="322" Width="128" Height="45" FontSize="16" FontFamily="Aharoni" RenderTransformOrigin="0.514,0.724"/>
+            <Button Content="צור" Canvas.Left="66" Canvas.Top="312" Width="128" Height="45" FontSize="16" FontFamily="Aharoni" RenderTransformOrigin="0.514,0.724"/>
             <Label Content="יצירת משתמש חדש" Canvas.Left="226" Canvas.Top="10" Width="186" FontSize="25" FontFamily="Aharoni"/>
-            <GroupBox Header="פרטים אישיים" Height="217" Canvas.Left="576" Canvas.Top="195" Width="354" FontFamily="Aharoni"/>
+            <GroupBox Header="פרטים אישיים" Height="275" Canvas.Left="233" Canvas.Top="71" Width="384" FontFamily="Aharoni"/>
             <GroupBox Header="תמונה" HorizontalAlignment="Left" Height="218" VerticalAlignment="Top" Width="204" FontFamily="Aharoni" Canvas.Left="24" Canvas.Top="71"/>
             <Label Content="מין" Canvas.Left="487" Canvas.Top="238" Width="104" FontFamily="Aharoni" Height="27" FontSize="16"/>
-            <Label Content="תאריך לידה" Canvas.Left="488" Canvas.Top="205" Width="104" FontFamily="Aharoni" Height="36" FontSize="16"/>
-            <Label Content="קוד חבר" Canvas.Left="487" Canvas.Top="263" Width="104" FontFamily="Aharoni" Height="29" FontSize="16"/>
-            <RadioButton Content="זכר" Canvas.Left="448" Canvas.Top="245" FontFamily="Aharoni" FontSize="14"/>
-            <RadioButton Content="נקבה" Canvas.Left="400" Canvas.Top="245" FontFamily="Aharoni" FontSize="14"/>
-            <RadioButton Content="אחר" Canvas.Left="351" Canvas.Top="245" FontFamily="Aharoni" FontSize="14"/>
-            <TextBox Height="23" Canvas.Left="351" TextWrapping="Wrap" Text="TextBox" Canvas.Top="103" Width="120" FontFamily="Aharoni"/>
-            <TextBox Height="23" Canvas.Left="351" TextWrapping="Wrap" Text="TextBox" Canvas.Top="135" Width="120" FontFamily="Aharoni"/>
-            <TextBox Height="23" Canvas.Left="351" TextWrapping="Wrap" Text="TextBox" Canvas.Top="181" Width="120" FontFamily="Aharoni"/>
-            <TextBox Height="23" Canvas.Left="351" TextWrapping="Wrap" Text="TextBox" Canvas.Top="212" Width="120" FontFamily="Aharoni"/>
-            <TextBox Height="23" Canvas.Left="351" TextWrapping="Wrap" Text="TextBox" Canvas.Top="269" Width="120" FontFamily="Aharoni"/>
+            <Label Content="תאריך לידה" Canvas.Left="488" Canvas.Top="188" Width="104" FontFamily="Aharoni" Height="36" FontSize="16"/>
+            <Label Content="קוד בן/בת זוג" Canvas.Left="487" Canvas.Top="293" Width="104" FontFamily="Aharoni" Height="29" FontSize="16"/>
+            <RadioButton Content="זכר" Canvas.Left="448" Canvas.Top="246" FontFamily="Aharoni" FontSize="14"/>
+            <RadioButton Content="נקבה" Canvas.Left="400" Canvas.Top="246" FontFamily="Aharoni" FontSize="14"/>
+            <RadioButton Content="אחר" Canvas.Left="350" Canvas.Top="246" FontFamily="Aharoni" FontSize="14"/>
+            <TextBox TextWrapping="Wrap" Text="nnnnnnnnnn" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Height="24" Canvas.Left="262" Canvas.Top="216" Width="220"/>
+            <Label Content="קוד חבר" Canvas.Left="487" Canvas.Top="212" Width="104" FontFamily="Aharoni" Height="29" FontSize="16"/>
+            <TextBox TextWrapping="Wrap" Text="dd/mm/yyyy" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Height="24" Canvas.Left="262" Canvas.Top="188" Width="220"/>
+            <TextBox TextWrapping="Wrap" Text="nnnnnnnnnn" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Height="24" Canvas.Left="262" Canvas.Top="159" Width="220"/>
+            <TextBox TextWrapping="Wrap" Text="email@email" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Height="24" Canvas.Left="263" Canvas.Top="269" Width="220"/>
+            <TextBox TextWrapping="Wrap" Text="nnnnnnnnnn" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Height="24" Canvas.Left="262" Canvas.Top="298" Width="220"/>
+            <TextBox TextWrapping="Wrap" Text="nnnnnnnnnn" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Height="24" Canvas.Left="263" Canvas.Top="92" Width="220"/>
+            <Label Content="שם פרטי" Canvas.Left="488" Canvas.Top="92" Width="104" FontFamily="Aharoni" Height="43" FontSize="16"/>
         </Canvas>
-        <Canvas x:Name="update_user_canvas" HorizontalAlignment="Left" Height="397" Margin="10,23,0,0" VerticalAlignment="Top" Width="622" Visibility="Hidden">
+        <Canvas x:Name="update_user_canvas" HorizontalAlignment="Left" Height="397" Margin="10,23,0,0" VerticalAlignment="Top" Width="622" Visibility="Visible">
             <Image Height="100" Canvas.Left="66" Canvas.Top="72" Width="100"/>
             <Image Height="162" Source="Image3.png" Stretch="Fill" Width="162" Canvas.Left="49" Canvas.Top="98"/>
             <Label x:Name="forgotPassword_label1" Content="בחר תמונה" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Aharoni" Height="24" Width="61" Foreground="#FF0728DD" ForceCursor="True" Cursor="Hand" Canvas.Left="94" Canvas.Top="265" FontSize="14"/>
-            <Label Content="מחיקת/עידכון חבר" Canvas.Left="226" Canvas.Top="10" Width="186" FontSize="25" FontFamily="Aharoni"/>
-            <GroupBox Header="פרטים אישיים" Height="242" Canvas.Left="248" Canvas.Top="145" Width="364" FontFamily="Aharoni"/>
+            <Label Content="מחיקת/עידכון חבר" Canvas.Left="226" Canvas.Top="-5" Width="186" FontSize="25" FontFamily="Aharoni"/>
+            <GroupBox Header="פרטים אישיים" Height="242" Canvas.Left="248" Canvas.Top="130" Width="364" FontFamily="Aharoni">
+            </GroupBox>
             <GroupBox Header="תמונה" HorizontalAlignment="Left" Height="218" VerticalAlignment="Top" Width="204" FontFamily="Aharoni" Canvas.Left="22" Canvas.Top="71"/>
             <GroupBox Header="חיפוש" Height="43" Canvas.Left="248" Canvas.Top="72" Width="365" FontFamily="Aharoni">
                 <Label Content="הזן קוד חבר" HorizontalAlignment="Left" Margin="289,0,0,0" VerticalAlignment="Top"/>
@@ -51,7 +55,25 @@
             <Button Content="חפש" Canvas.Left="275" Canvas.Top="87" Width="76" FontFamily="Aharoni" Click="Button_Click"/>
             <Button Content="עדכן" Canvas.Left="49" Canvas.Top="342" Width="135" FontFamily="Aharoni" Click="Button_Click" Height="36" FontSize="20"/>
             <Button Content="מחק" Canvas.Left="49" Canvas.Top="301" Width="135" FontFamily="Aharoni" Click="Button_Click" Height="36" FontSize="20"/>
-            <TextBox Height="23" Canvas.Left="444" TextWrapping="Wrap" Text="TextBox" Canvas.Top="115" Width="120"/>
+            <Label Content="אימייל" FontFamily="Aharoni" Height="21" Canvas.Left="518" Width="46" Canvas.Top="224"/>
+            <Label Content="שם משפחה" FontFamily="Aharoni" Height="21" Canvas.Left="517" Width="68" Canvas.Top="201"/>
+            <Label Content="תאריך לידה" FontFamily="Aharoni" Height="22" Canvas.Left="518" Width="64" Canvas.Top="299"/>
+            <Label Content="קוד חבר" FontFamily="Aharoni" Height="24" Canvas.Left="519" Width="46" Canvas.Top="150"/>
+            <Label Content="&#xA;שם פרטי" FontFamily="Aharoni" Height="34" Canvas.Left="519" Width="46" Canvas.Top="164"/>
+            <Label Content="&#xA;מספר פלאפון" FontFamily="Aharoni" Height="37" Canvas.Left="515" Width="70" Canvas.Top="261"/>
+            <TextBox Height="19" Canvas.Left="378" TextWrapping="Wrap" Text="ישראל" Canvas.Top="179" Width="132" TextChanged="TextBox_TextChanged_1" TextAlignment="Right" Foreground="Gray" FontFamily="Aharoni"/>
+            <Label Content="מין" FontFamily="Aharoni" Height="24" Canvas.Left="516" Width="29" Canvas.Top="246" RenderTransformOrigin="0.4,0.516"/>
+            <RadioButton Content="זכר" Canvas.Left="431" Canvas.Top="252" Width="79" Height="19" FontFamily="Aharoni" Checked="RadioButton_Checked" FlowDirection="RightToLeft"/>
+            <RadioButton Content="נקבה" Canvas.Left="385" Canvas.Top="252" Width="79" Height="19" FontFamily="Aharoni" Checked="RadioButton_Checked" FlowDirection="RightToLeft"/>
+            <RadioButton Content="אחר" Canvas.Left="333" Canvas.Top="252" Width="79" Height="19" FontFamily="Aharoni" Checked="RadioButton_Checked" FlowDirection="RightToLeft"/>
+            <TextBox Height="19" Canvas.Left="379" TextWrapping="Wrap" Text="ישראלי" Canvas.Top="203" Width="132" TextChanged="TextBox_TextChanged_1" TextAlignment="Right" Foreground="Gray" FontFamily="Aharoni"/>
+            <TextBox Height="19" Canvas.Left="378" TextWrapping="Wrap" Text="email@email" Canvas.Top="224" Width="132" TextChanged="TextBox_TextChanged_1" TextAlignment="Right" Foreground="Gray" FontFamily="Aharoni"/>
+            <TextBox Height="19" Canvas.Left="378" TextWrapping="Wrap" Text="nnnnnnnnnn" Canvas.Top="276" Width="132" TextChanged="TextBox_TextChanged_1" TextAlignment="Right" Foreground="Gray" FontFamily="Aharoni"/>
+            <TextBox Height="19" Canvas.Left="379" TextWrapping="Wrap" Text="dd/mm/yyyy" Canvas.Top="301" Width="132" TextChanged="TextBox_TextChanged_1" TextAlignment="Right" Foreground="Gray" FontFamily="Aharoni"/>
+            <Label Content="&#xA;קוד בן / בח זוג" FontFamily="Aharoni" Height="43" Canvas.Left="515" Width="78" Canvas.Top="311"/>
+            <TextBox Height="19" Canvas.Left="378" TextWrapping="Wrap" Text="nnnnnnnnnn" Canvas.Top="327" Width="132" TextChanged="TextBox_TextChanged_1" TextAlignment="Right" Foreground="Gray" FontFamily="Aharoni"/>
+            <TextBox Height="19" Canvas.Left="378" TextWrapping="Wrap" Text="nnnnnnnnnn" Canvas.Top="153" Width="132" TextChanged="TextBox_TextChanged_1" TextAlignment="Right" Foreground="Gray" FontFamily="Aharoni"/>
         </Canvas>
+        <TextBox TextWrapping="Wrap" Text="ישראל" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16" Margin="355,134,215.6,290"/>
     </Grid>
 </Window>

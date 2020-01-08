@@ -11,7 +11,7 @@
         <Button x:Name="btn_tor_lachaver" Content="דוח תורנויות לחבר" HorizontalAlignment="Left" Margin="654,101,0,0" VerticalAlignment="Top" Width="235" Height="38"/>
         <Button x:Name="btn_miss" Content="דוח היעדרויות" HorizontalAlignment="Left" Margin="654,139,0,0" VerticalAlignment="Top" Width="235" Height="38"/>
         <Button x:Name="btn_shibutzim" Content="דוח שיבוצים" HorizontalAlignment="Left" Margin="654,177,0,0" VerticalAlignment="Top" Width="235" Height="38"/>
-        <CheckBox Content="דוח שיבוצים לפי תורנויות" HorizontalAlignment="Left" Margin="701,239,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="check_box_report_shibutzim" Content="דוח שיבוצים לפי תורנויות" HorizontalAlignment="Left" Margin="701,239,0,0" VerticalAlignment="Top"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="889">
             <Button x:Name="btn_back_to_main" Content="חזרה" Margin="763,9,9,18"/>
         </Border>

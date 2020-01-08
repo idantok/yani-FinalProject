@@ -28,7 +28,7 @@
         </Button>
         <Button HorizontalAlignment="Left" Margin="486,261,0,0" VerticalAlignment="Top" Width="232" Height="77" Content="&#xD;&#xA;היעדרויות&#xA;&#xA;&#xA;" FontWeight="Bold" Grid.ColumnSpan="3"/>
         <Button HorizontalAlignment="Left" Margin="89,143,0,0" VerticalAlignment="Top" Width="199" Height="77" Content="&#xD;&#xA;תורנויות&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" FontWeight="Bold"/>
-        <Button HorizontalAlignment="Left" Margin="34.1,143,0,0" VerticalAlignment="Top" Width="199" Height="77" Content="חברים&#xA;" FontWeight="Bold" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <Button x:Name="friends_Button" HorizontalAlignment="Left" Margin="34.1,143,0,0" VerticalAlignment="Top" Width="199" Height="77" Content="חברים&#xA;" FontWeight="Bold" Grid.ColumnSpan="3" Grid.Column="1" Click="Friends_Button_Click"/>
         <Button x:Name="Setting_Button" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Width="42" Click="Setting_Button_Click">
             <Image Height="31" Source="help.png" Stretch="Fill" Width="35"/>
         </Button>

@@ -37,5 +37,12 @@ namespace GUI_Duty_Manager
             SettingsScreen ss = new SettingsScreen();
             ss.Show();
         }
+
+        private void Friends_Button_Click(object sender, RoutedEventArgs e)
+        {
+            FreindsScreen fs = new FreindsScreen();
+            fs.Show();
+            this.Close();
+        }
     }
 }

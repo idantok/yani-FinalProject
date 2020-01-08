@@ -55,12 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FreindsScreen.xaml.cs">
+      <DependentUpon>FreindsScreen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ReportScreen.xaml.cs">
       <DependentUpon>ReportScreen.xaml</DependentUpon>
     </Compile>
     <Compile Include="SettingsScreen.xaml.cs">
       <DependentUpon>SettingsScreen.xaml</DependentUpon>
     </Compile>
+    <Page Include="FreindsScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LobbyScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -123,6 +130,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

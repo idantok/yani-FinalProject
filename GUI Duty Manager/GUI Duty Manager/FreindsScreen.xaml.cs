@@ -15,37 +15,44 @@ using System.Windows.Shapes;
 namespace GUI_Duty_Manager
 {
     /// <summary>
-    /// Interaction logic for SettingsScreen.xaml
+    /// Interaction logic for FreindsScreen.xaml
     /// </summary>
-    public partial class SettingsScreen : Window
+    public partial class FreindsScreen : Window
     {
-        public SettingsScreen()
+        public FreindsScreen()
         {
             InitializeComponent();
-            new_user_canvas.Visibility = Visibility.Visible;
+            update_user_canvas.Visibility = Visibility.Hidden;
+            new_superuser_canvas.Visibility = Visibility.Visible;
         }
 
         private void BackSS_Button_Click(object sender, RoutedEventArgs e)
         {
+            LobbyScreen ls = new LobbyScreen();
+            ls.Show();
             this.Close();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
         private void GeneralSetting_Button_Click(object sender, RoutedEventArgs e)
         {
-            general_setting_canvas.Visibility = Visibility.Visible;
-            new_user_canvas.Visibility = Visibility.Hidden;
-
+            update_user_canvas.Visibility = Visibility.Hidden;
+            new_superuser_canvas.Visibility = Visibility.Visible;
         }
 
         private void NewUser_Button_Click_1(object sender, RoutedEventArgs e)
         {
-            new_user_canvas.Visibility = Visibility.Visible;
-            general_setting_canvas.Visibility = Visibility.Hidden;
+            update_user_canvas.Visibility = Visibility.Visible;
+            new_superuser_canvas.Visibility = Visibility.Hidden;
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

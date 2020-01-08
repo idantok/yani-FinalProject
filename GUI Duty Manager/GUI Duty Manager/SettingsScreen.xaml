@@ -8,13 +8,54 @@
         Title="SettingsScreen" Height="450" Width="896.8">
     <Grid Width="896.8" Height="450">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="26*"/>
-            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="382*"/>
+            <ColumnDefinition Width="331*"/>
+            <ColumnDefinition Width="18*"/>
+            <ColumnDefinition Width="165*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="newUser_Button" Content="יצירת משתמש חדש&#xD;&#xA;" Grid.Column="1" HorizontalAlignment="Left" Margin="279.6,75,-0.2,0" VerticalAlignment="Top" Width="235" Height="38"/>
-        <Button x:Name="generalSetting_Button" Content="הגדרות כלליות" Grid.Column="1" HorizontalAlignment="Left" Margin="279.6,129,-0.2,0" VerticalAlignment="Top" Width="235" Height="38"/>
-        <Button x:Name="DataBaseSetting_Button_Copy" Content=" SQL הגדרות שרת  " Grid.Column="1" HorizontalAlignment="Left" Margin="279.6,185,-0.2,0" VerticalAlignment="Top" Width="235" Height="38"/>
-        <Button x:Name="backSS_Button" Content="יציאה" Grid.Column="1" HorizontalAlignment="Left" Margin="400.6,10,0,0" VerticalAlignment="Top" Width="91" Height="28" Click="BackSS_Button_Click"/>
+        <Button x:Name="newUser_Button" Content="יצירת משתמש חדש&#xD;&#xA;" Grid.Column="1" HorizontalAlignment="Left" Margin="279.6,66,-0.2,0" VerticalAlignment="Top" Width="235" Height="38" Click="NewUser_Button_Click_1" Grid.ColumnSpan="3"/>
+        <Button x:Name="generalSetting_Button" Content="הגדרות כלליות" Grid.Column="1" HorizontalAlignment="Left" Margin="279.6,109,-0.2,0" VerticalAlignment="Top" Width="235" Height="38" Click="GeneralSetting_Button_Click" Grid.ColumnSpan="3"/>
+        <Button x:Name="DataBaseSetting_Button_Copy" Content=" SQL הגדרות שרת  " Grid.Column="1" HorizontalAlignment="Left" Margin="279.6,152,-0.2,0" VerticalAlignment="Top" Width="235" Height="38" Grid.ColumnSpan="3"/>
+        <Button x:Name="backSS_Button" Content="יציאה" Grid.Column="3" HorizontalAlignment="Left" Margin="51,10,0,0" VerticalAlignment="Top" Width="91" Height="28" Click="BackSS_Button_Click"/>
+        <Canvas x:Name="new_user_canvas" HorizontalAlignment="Left" Height="374" Margin="10,33,0,0" VerticalAlignment="Top" Width="622" Grid.ColumnSpan="2">
+            <TextBox Height="26" Canvas.Left="267" TextWrapping="Wrap" Text="ישראלי" Canvas.Top="156" Width="220" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16"/>
+            <TextBox Height="26" Canvas.Left="267" TextWrapping="Wrap" Text="ישראל" Canvas.Top="121" Width="220" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16"/>
+            <TextBox Height="26" Canvas.Left="267" TextWrapping="Wrap" Text="email@email.com" Canvas.Top="189" Width="220" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16"/>
+            <TextBox Height="26" Canvas.Left="267" TextWrapping="Wrap" Text="0524576728" Canvas.Top="224" Width="220" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16"/>
+            <Label Content="שם משפחה" Canvas.Left="492" Canvas.Top="156" Width="129" FontFamily="Aharoni" Height="33" FontSize="16"/>
+            <Label Content="&#xD;&#xA;שם פרטי" Canvas.Left="492" Canvas.Top="100" Width="129" FontFamily="Aharoni" Height="53" FontSize="16"/>
+            <Label Content="אימייל" Canvas.Left="492" Canvas.Top="188" Width="129" FontFamily="Aharoni" Height="35" FontSize="16"/>
+            <Label Content="מספר פלאפון" Canvas.Left="492" Canvas.Top="220" Width="129" FontFamily="Aharoni" Height="35" FontSize="16"/>
+            <Image Height="100" Canvas.Left="66" Canvas.Top="72" Width="100"/>
+            <Image Height="162" Source="Image3.png" Stretch="Fill" Width="162" Canvas.Left="49" Canvas.Top="98"/>
+            <Label x:Name="forgotPassword_label" Content="בחר תמונה" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Aharoni" Height="24" Width="61" Foreground="#FF0728DD" ForceCursor="True" Cursor="Hand" Canvas.Left="94" Canvas.Top="265" FontSize="14"/>
+            <Button Content="צור" Canvas.Left="249" Canvas.Top="319" Width="128" Height="45" FontSize="16" FontFamily="Aharoni" RenderTransformOrigin="0.514,0.724"/>
+            <Label Content="יצירת משתמש חדש" Canvas.Left="226" Canvas.Top="10" Width="186" FontSize="25" FontFamily="Aharoni"/>
+            <GroupBox Header="פרטים אישיים" Height="217" Canvas.Left="249" Canvas.Top="72" Width="354" FontFamily="Aharoni"/>
+            <GroupBox Header="תמונה" HorizontalAlignment="Left" Height="218" VerticalAlignment="Top" Width="204" FontFamily="Aharoni" Canvas.Left="24" Canvas.Top="71"/>
+        </Canvas>
+        <Canvas x:Name="newuser_canvas" HorizontalAlignment="Left" Height="374" Margin="5,26,0,0" VerticalAlignment="Top" Width="622" Grid.ColumnSpan="2" Visibility="Hidden">
+            <TextBox Height="26" Canvas.Left="267" TextWrapping="Wrap" Text="ישראלי" Canvas.Top="156" Width="220" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16"/>
+            <TextBox Height="26" Canvas.Left="267" TextWrapping="Wrap" Text="ישראל" Canvas.Top="121" Width="220" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16"/>
+            <TextBox Height="26" Canvas.Left="267" TextWrapping="Wrap" Text="email@email.com" Canvas.Top="189" Width="220" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16"/>
+            <TextBox Height="26" Canvas.Left="267" TextWrapping="Wrap" Text="0524576728" Canvas.Top="224" Width="220" Foreground="#FFA2A1A1" TextChanged="TextBox_TextChanged" FontFamily="Aharoni" TextAlignment="Right" FontSize="16"/>
+            <Label Content="שם משפחה" Canvas.Left="492" Canvas.Top="156" Width="129" FontFamily="Aharoni" Height="33" FontSize="16"/>
+            <Label Content="&#xA;שם פרטי" Canvas.Left="492" Canvas.Top="100" Width="129" FontFamily="Aharoni" Height="53" FontSize="16"/>
+            <Label Content="אימייל" Canvas.Left="492" Canvas.Top="188" Width="129" FontFamily="Aharoni" Height="35" FontSize="16"/>
+            <Label Content="מספר פלאפון" Canvas.Left="492" Canvas.Top="220" Width="129" FontFamily="Aharoni" Height="35" FontSize="16"/>
+            <Image Height="100" Canvas.Left="66" Canvas.Top="72" Width="100"/>
+            <Image Height="162" Source="Image3.png" Stretch="Fill" Width="162" Canvas.Left="49" Canvas.Top="98"/>
+            <Label x:Name="forgotPassword_label1" Content="בחר תמונה" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Aharoni" Height="24" Width="61" Foreground="#FF0728DD" ForceCursor="True" Cursor="Hand" Canvas.Left="94" Canvas.Top="265" FontSize="14"/>
+            <Button Content="צור" Canvas.Left="249" Canvas.Top="319" Width="128" Height="45" FontSize="16" FontFamily="Aharoni" RenderTransformOrigin="0.514,0.724"/>
+            <Label Content="יצירת משתמש חדש" Canvas.Left="226" Canvas.Top="10" Width="186" FontSize="25" FontFamily="Aharoni"/>
+            <GroupBox Header="פרטים אישיים" Height="217" Canvas.Left="249" Canvas.Top="72" Width="354" FontFamily="Aharoni"/>
+        </Canvas>
+        <Canvas x:Name="general_setting_canvas" HorizontalAlignment="Left" Height="374" Margin="5,26,0,0" VerticalAlignment="Top" Width="622" Grid.ColumnSpan="2" Visibility="Hidden">
+            <Button Content="עדכון מידע משתמש" Canvas.Left="182" Canvas.Top="106" Width="245" Height="57" FontFamily="Aharoni" FontSize="26"/>
+            <Button Content="עדכון מידע משתמש" Canvas.Left="182" Canvas.Top="190" Width="245" Height="57" FontFamily="Aharoni" FontSize="26"/>
+            <Button Content="עדכון מידע משתמש" Canvas.Left="182" Canvas.Top="274" Width="245" Height="57" FontFamily="Aharoni" FontSize="26"/>
+            <Label Content="הגדרות כלליות" Canvas.Left="242" Canvas.Top="10" Height="38" Width="204" FontFamily="Aharoni" FontSize="25"/>
+        </Canvas>
 
     </Grid>
 </Window>

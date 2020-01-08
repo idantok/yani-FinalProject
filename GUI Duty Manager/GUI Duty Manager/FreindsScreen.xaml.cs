@@ -64,5 +64,12 @@ namespace GUI_Duty_Manager
         {
 
         }
+
+        private void BackSS_Buttone_Click(object sender, RoutedEventArgs e)
+        {
+            LobbyScreen ls = new LobbyScreen();
+            ls.Show();
+            this.Close();
+        }
     }
 }

@@ -5,84 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_Duty_Manager"
         mc:Ignorable="d"
-        Title="Duty Mangaer - מסך דוחות" Height="552.67" Width="896.8" FontFamily="Aharoni">
-    <Grid Background="#FF8D8D8D" OpacityMask="#FF4B3333">
-        <Button x:Name="btn_tor_clali" Content=" דוח תורנויות כללי" HorizontalAlignment="Left" Margin="654,63,0,0" VerticalAlignment="Top" Width="235" Height="38" FontFamily="Aharoni" FontSize="16"/>
-        <Button x:Name="btn_tor_lachaver" Content="דוח תורנויות לחבר" HorizontalAlignment="Left" Margin="654,100,0,0" VerticalAlignment="Top" Width="235" Height="38" FontFamily="Aharoni" FontSize="16"/>
-        <Button x:Name="btn_miss" Content="דוח היעדרויות" HorizontalAlignment="Left" Margin="654,137,0,0" VerticalAlignment="Top" Width="235" Height="38" FontFamily="Aharoni" FontSize="16"/>
-        <Button x:Name="btn_shibutzim" Content="דוח שיבוצים" HorizontalAlignment="Left" Margin="654,174,0,0" VerticalAlignment="Top" Width="235" Height="38" FontFamily="Aharoni" FontSize="16"/>
-        <CheckBox x:Name="check_box_report_shibutzim" Content="דוח שיבוצים לפי תורנויות" HorizontalAlignment="Left" Margin="701,239,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Checked="Check_box_report_shibutzim_Checked" Unchecked="Check_box_report_shibutzim_Unchecked"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="889">
-            <Button x:Name="btn_back_to_main" Content="חזרה" Margin="763,9,9,18" Click="Btn_back_to_main_Click" FontFamily="Aharoni" FontSize="16"/>
+        Title="Duty Mangaer - מסך דוחות" Height="584" Width="896.8" FontFamily="Aharoni" MinWidth="896.8" MinHeight="584" MaxWidth="896.8" MaxHeight="584">
+    <Grid Background="#FFD7D3D3" OpacityMask="#FF4B3333">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="728*"/>
+            <ColumnDefinition Width="163*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn_tor_clali" Content=" דוח תורנויות כללי" HorizontalAlignment="Left" Margin="654,63,0,0" VerticalAlignment="Top" Width="235" Height="38" FontFamily="Aharoni" FontSize="16" Click="Btn_tor_clali_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="btn_tor_lachaver" Content="דוח תורנויות לחבר" HorizontalAlignment="Left" Margin="654,100,0,0" VerticalAlignment="Top" Width="235" Height="38" FontFamily="Aharoni" FontSize="16" Click="Btn_tor_lachaver_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="btn_miss" Content="דוח היעדרויות" HorizontalAlignment="Left" Margin="654,137,0,0" VerticalAlignment="Top" Width="235" Height="38" FontFamily="Aharoni" FontSize="16" Click="Btn_miss_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="btn_shibutzim" Content="דוח שיבוצים" HorizontalAlignment="Left" Margin="654,174,0,0" VerticalAlignment="Top" Width="235" Height="38" FontFamily="Aharoni" FontSize="16" Click="Btn_shibutzim_Click" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="check_box_report_shibutzim" Content="דוח שיבוצים לפי תורנויות" HorizontalAlignment="Left" Margin="701,222,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Checked="Check_box_report_shibutzim_Checked" Unchecked="Check_box_report_shibutzim_Unchecked" IsEnabled="False" Grid.ColumnSpan="2"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="889" Grid.ColumnSpan="2">
+            <Image Margin="53.2,5.2,802.2,29.6" Source="icons8-microsoft-excel-64.png" Stretch="Fill"/>
         </Border>
-        <ComboBox x:Name="check_box_toranuito" HorizontalAlignment="Left" Margin="701,268,0,0" VerticalAlignment="Top" Width="154" Height="23"/>
-        <ComboBox x:Name="check_box_chaverim" HorizontalAlignment="Left" Margin="701,306,0,0" VerticalAlignment="Top" Width="154" Height="23"/>
-        <DatePicker x:Name="calendar_date_ini" HorizontalAlignment="Left" Margin="701,366,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.559,1.092"/>
-        <DatePicker x:Name="calendar_date_end" HorizontalAlignment="Left" Margin="701,424,0,0" VerticalAlignment="Top"/>
-        <Label Content=":תאריך התחלה" HorizontalAlignment="Left" Margin="808,368,0,0" VerticalAlignment="Top" FontFamily="Aharoni" FontSize="14"/>
-        <Label Content=":תאריך סיום" HorizontalAlignment="Left" Margin="820,424,0,0" VerticalAlignment="Top" FontFamily="Aharoni" FontSize="14"/>
-        <Button x:Name="btn_show_report" Content="הצג דוח" HorizontalAlignment="Left" Margin="738,479,0,0" VerticalAlignment="Top" Width="94" Height="33" FontFamily="Aharoni" FontSize="14"/>
+        <ComboBox x:Name="check_box_toranuito" Text ="בחירת תורנות" HorizontalAlignment="Left" Margin="701,268,0,0" VerticalAlignment="Top" Width="154" Height="23" IsEditable="True" IsReadOnly="True" IsEnabled="False" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="check_box_chaverim" Text ="בחירת חבר" HorizontalAlignment="Left" Margin="701,317,0,0" VerticalAlignment="Top" Width="154" Height="23" IsEnabled="False" SelectionChanged="Check_box_chaverim_SelectionChanged" IsEditable="True" IsReadOnly="True" Grid.ColumnSpan="2"/>
+        <DatePicker x:Name="calendar_date_ini" HorizontalAlignment="Left" Margin="701,366,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.559,1.092" IsEnabled="False" Grid.ColumnSpan="2"/>
+        <DatePicker x:Name="calendar_date_end" HorizontalAlignment="Left" Margin="701,424,0,0" VerticalAlignment="Top" IsEnabled="False" Grid.ColumnSpan="2"/>
+        <Label Content=":תאריך התחלה" HorizontalAlignment="Left" Margin="78.4,368,0,0" VerticalAlignment="Top" FontFamily="Aharoni" FontSize="14" Grid.Column="1"/>
+        <Label Content=":תאריך סיום" HorizontalAlignment="Left" Margin="86.4,424,0,0" VerticalAlignment="Top" FontFamily="Aharoni" FontSize="14" Grid.Column="1"/>
+        <Button x:Name="btn_show_report" Content="הצג דוח" HorizontalAlignment="Left" Margin="681,479,0,0" VerticalAlignment="Top" Width="151" Height="33" FontFamily="Aharoni" FontSize="14" Grid.ColumnSpan="2"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="459" Margin="0,63,0,0" VerticalAlignment="Top" Width="654" Background="White">
-            <DataGrid>
-                <TabItem/>
-                <TabItem Background="#FFACA7A7"/>
-                <TabItem/>
-                <TabItem>
-                    <TabItem.Background>
-                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                            <GradientStop Color="#FFACA7A7" Offset="1"/>
-                        </LinearGradientBrush>
-                    </TabItem.Background>
-                </TabItem>
-                <TabItem/>
-                <TabItem>
-                    <TabItem.Background>
-                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                            <GradientStop Color="#FFACA7A7" Offset="1"/>
-                        </LinearGradientBrush>
-                    </TabItem.Background>
-                </TabItem>
-                <TabItem/>
-                <TabItem>
-                    <TabItem.Background>
-                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                            <GradientStop Color="#FFACA7A7" Offset="1"/>
-                        </LinearGradientBrush>
-                    </TabItem.Background>
-                </TabItem>
-                <TabItem/>
-                <TabItem>
-                    <TabItem.Background>
-                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                            <GradientStop Color="#FFACA7A7" Offset="1"/>
-                        </LinearGradientBrush>
-                    </TabItem.Background>
-                </TabItem>
-                <TabItem/>
-                <TabItem>
-                    <TabItem.Background>
-                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                            <GradientStop Color="#FFACA7A7" Offset="1"/>
-                        </LinearGradientBrush>
-                    </TabItem.Background>
-                </TabItem>
-                <TabItem/>
-                <TabItem>
-                    <TabItem.Background>
-                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                            <GradientStop Color="#FFACA7A7" Offset="1"/>
-                        </LinearGradientBrush>
-                    </TabItem.Background>
-                </TabItem>
-                <TabItem/>
-            </DataGrid>
+            <GroupBox Header="תצוגה מקדימה" Margin="-0.8,-15.8,0.6,-0.2"/>
         </Border>
+        <Image Margin="10,4,681.6,521.4" Source="icons8-secured-letter-64.png" Stretch="Fill"/>
+        <Image Margin="93,6,600.6,522.4" Source="icons8-pdf-64.png" Stretch="Fill"/>
+        <Image Margin="167,3,518.6,517.4" Source="icons8-print-100.png" Stretch="Fill"/>
+        <Image Margin="121,0,555.6,515.4" Source="icons8-microsoft-word-100.png" Stretch="Fill"/>
+        <Label Content="דוחות" HorizontalAlignment="Left" Margin="420,4,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <Button x:Name="backSS_Button_report" Content="חזרה לתפריט" HorizontalAlignment="Left" Margin="25.4,10,0,0" VerticalAlignment="Top" Width="121" Height="28" Click="BackSS_Button_report_Click" FontFamily="Aharoni" Grid.Column="1"/>
+        <Image Margin="119.4,11,17.4,518.4" Source="exit (3).png" Stretch="Fill" Grid.Column="1"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="0,84,0,0" VerticalAlignment="Top" Width="654" Background="#FFDCC2C2"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="0,121,0,0" VerticalAlignment="Top" Width="654" Background="#FFE7E7E7"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="0,84,0,0" VerticalAlignment="Top" Width="654" Background="#FFE7E7E7"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="0,159,0,0" VerticalAlignment="Top" Width="654" Background="#FFE7E7E7"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="0,196,0,0" VerticalAlignment="Top" Width="654" Background="#FFE7E7E7"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="0,230,0,0" VerticalAlignment="Top" Width="654" Background="#FFE7E7E7"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="0,268,0,0" VerticalAlignment="Top" Width="654" Background="#FFDCC2C2"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="0,268,0,0" VerticalAlignment="Top" Width="654" Background="#FFE7E7E7"/>
+        <Image Margin="71.4,479,64.4,47.4" Source="professions-and-jobs.png" Stretch="Fill" Grid.Column="1"/>
 
     </Grid>
 </Window>

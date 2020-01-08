@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_Duty_Manager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="584" Width="896.8">
+        Title="MainWindow" Height="584" Width="896.8" MinWidth="896.8" MinHeight="584" MaxHeight="584" MaxWidth="896.8">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -166,11 +166,15 @@
         </Style>
     </Window.Resources>
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="773*"/>
+            <ColumnDefinition Width="117*"/>
+        </Grid.ColumnDefinitions>
         <Label x:Name="Log_In_Label" Content="Log In" HorizontalAlignment="Left" Margin="375,137,0,0" VerticalAlignment="Top" Height="73" Width="200" FontSize="64" FontFamily="Aharoni"/>
         <TextBox x:Name="user_Textbox" HorizontalAlignment="Left" Height="34" Margin="272,243,0,0" TextWrapping="Wrap" Text="User" VerticalAlignment="Top" Width="173" Foreground="Gray" FontSize="15"/>
         <TextBox x:Name="password_Textbox" HorizontalAlignment="Left" Height="34" Margin="490,243,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="173" Foreground="Gray" FontSize="15" RenderTransformOrigin="-0.151,-0.741"/>
         <Label x:Name="title__Label_" Content="Duty Manager" HorizontalAlignment="Left" Margin="250,46,0,0" VerticalAlignment="Top" Height="86" Width="495" FontSize="64" FontFamily="Aharoni"/>
-        <CheckBox HorizontalAlignment="Center" Style="{DynamicResource CheckBoxStyle2}" VerticalAlignment="Center" Margin="553,379,276.4,140.4" Padding="56,12,12,12" Width="61" Height="35" RenderTransformOrigin="0.5,0.5" FontSize="11" FontWeight="Bold">
+        <CheckBox HorizontalAlignment="Center" Style="{DynamicResource CheckBoxStyle2}" VerticalAlignment="Center" Margin="553,379,159.2,140.4" Padding="56,12,12,12" Width="61" Height="35" RenderTransformOrigin="0.5,0.5" FontSize="11" FontWeight="Bold">
             <CheckBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -183,7 +187,7 @@
         <Label x:Name="forgotPassword_label" Content="Forgot Passoword?" HorizontalAlignment="Left" Margin="293,389,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Height="24" Width="118" Foreground="#FF0728DD" ForceCursor="True" Cursor="Hand"/>
         <Button x:Name="connect_button" Content="Connect" HorizontalAlignment="Left" Margin="375,314,0,0" VerticalAlignment="Top" Width="162" Height="43" BorderBrush="#FFF6F6F6" Background="#FFA1A6C0" Click="Connect_button_Click"/>
         <Label x:Name="Savepassword_label_" Content="Save Password" HorizontalAlignment="Left" Margin="457,389,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Height="24" Width="118" Foreground="#FF030303" ForceCursor="True" Cursor="Hand"/>
-        <Label Content=" Ⓒ Yani-Team GUI Project" HorizontalAlignment="Left" Margin="731,519,0,0" VerticalAlignment="Top" Width="149"/>
+        <Label Content=" Ⓒ Yani-Team GUI Project" HorizontalAlignment="Left" Margin="731,519,0,0" VerticalAlignment="Top" Width="149" Grid.ColumnSpan="2"/>
 
 
     </Grid>

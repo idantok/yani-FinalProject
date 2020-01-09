@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_Duty_Manager"
         mc:Ignorable="d"
-        Title="SettingsScreen" Height="450" Width="896.8" MaxWidth="896.8" MaxHeight="450" MinHeight="450" MinWidth="896.8">
-    <Grid Width="896.8" Height="450">
+        Title="הגדרות" Height="450" Width="903.2" MaxWidth="896.8" MaxHeight="450" MinHeight="450" MinWidth="896.8">
+    <Grid Height="450" Margin="0,0,-2.6,-30" Width="896.8">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="382*"/>
             <ColumnDefinition Width="331*"/>
@@ -57,15 +57,15 @@
             <Button Content="עדכון שפה ותצוגת תוכנה" Canvas.Left="182" Canvas.Top="274" Width="245" Height="57" FontFamily="Aharoni" FontSize="26"/>
             <Label Content="הגדרות כלליות" Canvas.Left="242" Canvas.Top="10" Height="38" Width="204" FontFamily="Aharoni" FontSize="25"/>
         </Canvas>
-        <Image Margin="119,72,12.8,349" Source="plus.png" Stretch="Fill" Grid.Column="3"/>
+        <Image Margin="113,72,18.8,349" Source="plus.png" Stretch="Fill" Grid.Column="3"/>
         <Image Margin="115,11,23.8,414" Source="exit (3).png" Stretch="Fill" Grid.Column="3"/>
         <Image Margin="-235,-80,105.4,18" Source="Image5.png" Stretch="Fill">
             <Image.OpacityMask>
                 <ImageBrush/>
             </Image.OpacityMask>
         </Image>
-        <Image Source="help.png" Stretch="Fill" Margin="118,108,11.8,311" Grid.Column="3"/>
-        <Image Margin="115,139,9.8,266" Source="icons8-lock-database-50.png" Stretch="Fill" Grid.Column="3"/>
+        <Image Source="help.png" Stretch="Fill" Margin="112,108,17.8,311" Grid.Column="3"/>
+        <Image Margin="109,139,15.8,266" Source="icons8-lock-database-50.png" Stretch="Fill" Grid.Column="3"/>
 
     </Grid>
 </Window>

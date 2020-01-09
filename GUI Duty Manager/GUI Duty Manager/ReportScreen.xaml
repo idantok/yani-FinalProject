@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_Duty_Manager"
         mc:Ignorable="d"
-        Title="Duty Mangaer - מסך דוחות" Height="584" Width="896.8" FontFamily="Aharoni" MinWidth="896.8" MinHeight="584" MaxWidth="896.8" MaxHeight="584">
+        Title="דוחות" Height="584" Width="896.8" FontFamily="Aharoni" MinWidth="896.8" MinHeight="584" MaxWidth="896.8" MaxHeight="584">
     <Grid Background="#FFD7D3D3" OpacityMask="#FF4B3333">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="728*"/>
@@ -45,6 +45,8 @@
         <Button Content="" HorizontalAlignment="Left" Margin="0,268,0,0" VerticalAlignment="Top" Width="654" Background="#FFDCC2C2"/>
         <Button Content="" HorizontalAlignment="Left" Margin="0,268,0,0" VerticalAlignment="Top" Width="654" Background="#FFE7E7E7"/>
         <Image Margin="63.8,484,70.4,48.4" Source="professions-and-jobs.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Source="icons8-search-64.png" Stretch="Fill" Margin="132.8,272,17.4,270.4" Grid.Column="1"/>
+        <Image Source="icons8-search-64.png" Stretch="Fill" Margin="132.8,323,17.4,219.4" Grid.Column="1"/>
 
     </Grid>
 </Window>

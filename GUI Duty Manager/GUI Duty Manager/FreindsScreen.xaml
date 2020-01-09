@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_Duty_Manager"
         mc:Ignorable="d"
-        Title="FreindsScreen" Height="450" Width="896.8" MinWidth="896.8" MinHeight="450" Margin="0" MaxWidth="896.8" MaxHeight="450">
-    <Grid Width="896.8" Height="450" Margin="0,0,-6.6,-30" Visibility="Visible">
+        Title="חברים" Height="450" Width="905.6" MinWidth="896.8" MinHeight="450" Margin="0" MaxWidth="896.8" MaxHeight="450">
+    <Grid Height="450" Margin="0,0,-15.6,-30" Visibility="Visible">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="138*"/>
             <ColumnDefinition Width="568*"/>
@@ -81,7 +81,7 @@
         </Canvas>
         <Button x:Name="backSS_Buttone" Content="חזרה לתפריט" Grid.Column="3" HorizontalAlignment="Left" Margin="8.2,10,0,0" VerticalAlignment="Top" Width="121" Height="28" Click="BackSS_Buttone_Click" FontFamily="Aharoni"/>
         <Image Margin="102.2,11,23.8,414.4" Source="exit (3).png" Stretch="Fill" Grid.Column="3"/>
-        <Image Margin="106.2,72,12.8,349.4" Source="plus.png" Stretch="Fill" Grid.Column="3"/>
-        <Image Margin="102.2,113,12.8,307" Source="icons8-update-48.png" Stretch="Fill" Grid.Column="3"/>
+        <Image Margin="102,72,16.6,350" Source="plus.png" Stretch="Fill" Grid.Column="3"/>
+        <Image Margin="98,113,16.6,307" Source="icons8-update-48.png" Stretch="Fill" Grid.Column="3"/>
     </Grid>
 </Window>

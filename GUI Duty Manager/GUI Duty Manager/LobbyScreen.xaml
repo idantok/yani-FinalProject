@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_Duty_Manager"
         mc:Ignorable="d"
-        Title="LobbyScreen" Height="450" Width="896.8" MinWidth="896.8" MinHeight="450" MaxWidth="896.8" MaxHeight="450">
+        Title=" תפריט" Height="450" Width="896.8" MinWidth="896.8" MinHeight="450" MaxWidth="896.8" MaxHeight="450">
     <Grid Width="890.4">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="451*"/>
@@ -17,8 +17,8 @@
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="82" VerticalAlignment="Top" Width="890" Background="#FFD7D3D3" Grid.ColumnSpan="5"/>
         <Button x:Name="exit_Button" Content="יציאה" HorizontalAlignment="Left" Margin="110.8,42,0,0" VerticalAlignment="Top" Width="147" Click="Button_Click" Height="31" FontSize="20" FontFamily="Aharoni" Grid.Column="3" Grid.ColumnSpan="2"/>
         <Button x:Name="back_button_Copy" Content="התנתק" HorizontalAlignment="Left" Margin="110.8,6,0,0" VerticalAlignment="Top" Width="146" Click="Button_Click" Height="29" FontSize="20" FontFamily="Aharoni" Grid.Column="3" Grid.ColumnSpan="2"/>
-        <Label x:Name="network_label" Content=":מצב תקשורת" HorizontalAlignment="Left" Margin="106,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.236,0.406" FontFamily="Aharoni" FontSize="16"/>
-        <Label x:Name="network_label_Copy" Content="מחובר" HorizontalAlignment="Left" Margin="69,10,0,0" VerticalAlignment="Top" Foreground="#FF64AD6A" FontStretch="ExtraCondensed" FontWeight="ExtraBold"/>
+        <Label x:Name="network_label" Content=":איכות תקשורת" HorizontalAlignment="Left" Margin="106,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.236,0.406" FontFamily="Aharoni" FontSize="16"/>
+        <Label x:Name="network_label_Copy" Content="גבוהה" HorizontalAlignment="Left" Margin="69,8,0,0" VerticalAlignment="Top" Foreground="#FF64AD6A" FontStretch="ExtraCondensed" FontWeight="ExtraBold"/>
         <Button x:Name="bt_main_reports" HorizontalAlignment="Left" Margin="344,120,0,0" VerticalAlignment="Top" Width="200" Height="100" Content="&#xD;&#xA;דוחות&#xA;&#xA;&#xA;&#xD;&#xA;" FontWeight="Bold" Click="Bt_main_reports_Click" FontSize="20" Grid.ColumnSpan="2"/>
         <Button HorizontalAlignment="Left" Margin="172,253,0,0" VerticalAlignment="Top" Width="243" Height="100" Content="&#xD;&#xA;שיבוץ תורנויות&#xA;&#xA;&#xA;&#xA;" Background="#FFDDDDDD" FontWeight="Bold" BorderBrush="#FF0B0A0A" FontSize="17"/>
         <Button HorizontalAlignment="Left" Margin="18.6,253,0,0" VerticalAlignment="Top" Width="243" Height="100" Content="&#xD;&#xA;היעדרויות&#xA;&#xA;&#xA;" FontWeight="Bold" Grid.ColumnSpan="3" FontSize="20" Grid.Column="1"/>
@@ -47,11 +47,11 @@
             </Image.RenderTransform>
         </Image>
         <Grid Grid.Column="4" HorizontalAlignment="Left" Height="100" Margin="219,194,-212.6,0" VerticalAlignment="Top" Width="100"/>
-        <Label Content="הוספה משתמש חדש או &#xD;&#xA;עדכון פרטי משתמש קיים&#xD;&#xA;" HorizontalAlignment="Left" Margin="74.6,315,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Grid.ColumnSpan="3" Width="119" Foreground="#FF998686" Height="34" Grid.Column="1"/>
+        <Label Content="הוספת משתמש חדש או &#xA;עדכון פרטי משתמש קיים&#xA;" HorizontalAlignment="Left" Margin="74.6,315,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Grid.ColumnSpan="3" Width="119" Foreground="#FF998686" Height="34" Grid.Column="1"/>
         <Label Content="שיבוץ תורנות לפי פרק זמן מסוים&#xD;&#xA;" HorizontalAlignment="Left" Margin="224,315,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Width="152" Foreground="#FF998686"/>
         <Label Content="שיבוץ תורנות לפי פרק זמן מסוים&#xA;" HorizontalAlignment="Left" Margin="63,186,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Width="151" Grid.ColumnSpan="2" Grid.Column="2" Foreground="#FF998686" Height="24"/>
         <Label Content="ריכוז והנפקת דוחות &#xD;&#xA;" HorizontalAlignment="Left" Margin="398,185,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Width="92" Foreground="#FF998686" Height="25" Grid.ColumnSpan="2"/>
-        <Label Content="הוספת ועדכון תורנויות&#xD;&#xA;" HorizontalAlignment="Left" Margin="134,186,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Width="105" Foreground="#FF998686" Height="24"/>
+        <Label Content="הוספה ועדכון תורנויות&#xA;" HorizontalAlignment="Left" Margin="134,186,0,0" VerticalAlignment="Top" FontFamily="Aharoni" Width="105" Foreground="#FF998686" Height="24"/>
 
     </Grid>
 </Window>
